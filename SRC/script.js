@@ -9,7 +9,8 @@ const randomMessage = () => {
         "You, baby"
     ];
     message = messages[Math.floor(Math.random()*messages.length)];
-    let newElement = document.createElement("div")
+    let newElement = document.createElement("div");
+    newElement.className = "message";
     newElement.innerHTML = message;
     document.body.appendChild(newElement);
 }
